@@ -1,0 +1,64 @@
+diff --git Hyena.Data.Sqlite/Makefile.in Hyena.Data.Sqlite/Makefile.in
+index a2edf02..2f658c5 100644
+--- Hyena.Data.Sqlite/Makefile.in
++++ Hyena.Data.Sqlite/Makefile.in
+@@ -393,8 +393,6 @@ uninstall-am: uninstall-local uninstall-moduleSCRIPTS
+ 	pdf-am ps ps-am uninstall uninstall-am uninstall-local \
+ 	uninstall-moduleSCRIPTS
+ 
+-dnl SOURCES_BUILD += $(top_srcdir)/src/AssemblyInfo.cs
+-
+ all: $(ASSEMBLY_FILE) theme-icons
+ 
+ run: 
+diff --git Hyena.Gui/Makefile.in Hyena.Gui/Makefile.in
+index 75d2ffd..1349015 100644
+--- Hyena.Gui/Makefile.in
++++ Hyena.Gui/Makefile.in
+@@ -486,8 +486,6 @@ uninstall-am: uninstall-local uninstall-moduleSCRIPTS
+ 	pdf-am ps ps-am uninstall uninstall-am uninstall-local \
+ 	uninstall-moduleSCRIPTS
+ 
+-dnl SOURCES_BUILD += $(top_srcdir)/src/AssemblyInfo.cs
+-
+ all: $(ASSEMBLY_FILE) theme-icons
+ 
+ run: 
+diff --git Hyena/Makefile.in Hyena/Makefile.in
+index 0013964..46f4623 100644
+--- Hyena/Makefile.in
++++ Hyena/Makefile.in
+@@ -498,8 +498,6 @@ uninstall-am: uninstall-local uninstall-moduleSCRIPTS
+ 	pdf-am ps ps-am uninstall uninstall-am uninstall-local \
+ 	uninstall-moduleSCRIPTS
+ 
+-dnl SOURCES_BUILD += $(top_srcdir)/src/AssemblyInfo.cs
+-
+ all: $(ASSEMBLY_FILE) theme-icons
+ 
+ run: 
+diff --git Mono.Data.Sqlite/Makefile.in Mono.Data.Sqlite/Makefile.in
+index ac354a3..aa772b2 100644
+--- Mono.Data.Sqlite/Makefile.in
++++ Mono.Data.Sqlite/Makefile.in
+@@ -394,8 +394,6 @@ uninstall-am: uninstall-local uninstall-moduleSCRIPTS
+ 	pdf-am ps ps-am uninstall uninstall-am uninstall-local \
+ 	uninstall-moduleSCRIPTS
+ 
+-dnl SOURCES_BUILD += $(top_srcdir)/src/AssemblyInfo.cs
+-
+ all: $(ASSEMBLY_FILE) theme-icons
+ 
+ run: 
+diff --git build/build.rules.mk build/build.rules.mk
+index 648a60d..31291ba 100644
+--- build/build.rules.mk
++++ build/build.rules.mk
+@@ -2,7 +2,6 @@ UNIQUE_FILTER_PIPE = tr [:space:] \\n | sort | uniq
+ BUILD_DATA_DIR = $(top_builddir)/bin/share/$(PACKAGE)
+ 
+ SOURCES_BUILD = $(addprefix $(srcdir)/, $(SOURCES))
+-dnl SOURCES_BUILD += $(top_srcdir)/src/AssemblyInfo.cs
+ 
+ RESOURCES_EXPANDED = $(addprefix $(srcdir)/, $(RESOURCES))
+ RESOURCES_BUILD = $(foreach resource, $(RESOURCES_EXPANDED), \
