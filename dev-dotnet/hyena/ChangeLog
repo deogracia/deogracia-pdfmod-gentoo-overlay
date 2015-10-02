@@ -1,0 +1,10 @@
+# ChangeLog for dev-dotnet/hyena
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Id$
+
+*hyena-0.5 (02 Oct 2015)
+
+  02 Oct 2015; Lionel Félicité <lfelicite@gentoo.org> +hyena-0.5.ebuild,
+  +files/hyena-0.5_remove_dnl-lines.patch:
+  fix #1
+
