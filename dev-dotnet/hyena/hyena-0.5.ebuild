@@ -28,8 +28,12 @@ PATCHES=(
 
 DOCS=(COPYING NEWS README)
 
+#AUTOTOOLS_AUTORECONF=1
+
 src_prepare() {
     autotools-utils_src_prepare
+#eautoreconf
+default
 }
 
 src_configure() {
@@ -37,4 +41,10 @@ src_configure() {
         $(use_enable debug)
     )
     autotools-utils_src_configure
+
+#econf $(use_enable debug release)
+}
+
+src_install() {
+    autotools-utils_src_install
 }
